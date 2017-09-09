@@ -12,6 +12,7 @@
       <%= f.text_area :body%><br>
       <%= f.submit %>
     <% end %>
+    <%= link_to "delete", article_comment_path(@article, comment), method: :delete%>
     <br>
   <% end %>
 <% end %>
